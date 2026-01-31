@@ -1,3 +1,4 @@
+import tkinter.ttk as ttk
 import tkinter as tk
 from tkinter import filedialog
 import pandas as pd
@@ -54,11 +55,11 @@ def pick_file():
 
 root = tk.Tk()
 root.title("File Picker Demo")
-root.geometry("480x650")
+root.geometry("480x750")
 root.iconbitmap("res/lnec.ico")
 
 img = tk.PhotoImage(file="res/logo.png")
-img_label = tk.Label(root, image=img)
+img_label = ttk.Label(root, image=img)
 img_label.pack(padx=12, pady=12)
 
 selected_path_var = tk.StringVar(value="No file selected")
@@ -66,7 +67,7 @@ selected_path_var = tk.StringVar(value="No file selected")
 label = tk.Label(root, textvariable=selected_path_var, wraplength=480, justify="left")
 label.pack(padx=12, pady=(12, 8), fill="x")
 
-button = tk.Button(root, text="Pick a file…", command=pick_file)
+button = ttk.Button(root, text="Pick a file…", command=pick_file)
 button.pack(padx=12, pady=8)
 
 plot_frame = tk.Frame(root)
