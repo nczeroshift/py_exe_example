@@ -1,11 +1,11 @@
 # py_exe_example
-Criar um executável python com pandas, mathplot, tkinter para ler ficheiros XLSX
+Criar um executável **python** com **pandas**, **mathplot**, **tkinter** para ler ficheiros XLSX
 
 ![screenshot.png](screenshot.png)
 
 ## Pacotes de python
 
-### Variaveis de ambiente
+### Variáveis de ambiente
 Colocar na variavel PATH, o caminho onde o python esta instalado e os scripts
 ```
 C:\Users\EXEMPLO\AppData\Local\Python\bin
